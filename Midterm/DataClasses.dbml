@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EET321_2_Mon" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=IET2;Initial Catalog=EET321_2_Mon;Persist Security Info=True;User ID=EET321_2_Mon" SettingsObjectName="Midterm.Properties.Settings" SettingsPropertyName="EET321_2_MonConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.EET321_2_Mon" Member="EET321_2_Mons">
+    <Type Name="EET321_2_Mon">
+      <Column Name="DateTime" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Person" Type="System.String" DbType="NChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="A" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="B" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="C" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="D" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="E" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="F" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

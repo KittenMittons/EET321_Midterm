@@ -1,0 +1,11 @@
+c:\users\pct\documents\visual studio 2013\Projects\Midterm\Midterm\bin\Debug\Midterm.exe.config
+V:\Midterm\Midterm\bin\Debug\Midterm.exe.config
+V:\Midterm\Midterm\bin\Debug\Midterm.exe
+V:\Midterm\Midterm\bin\Debug\Midterm.pdb
+V:\Midterm\Midterm\obj\Debug\Midterm.csprojResolveAssemblyReference.cache
+V:\Midterm\Midterm\obj\Debug\Midterm.Form1.resources
+V:\Midterm\Midterm\obj\Debug\Midterm.Properties.Resources.resources
+V:\Midterm\Midterm\obj\Debug\Midterm.csproj.GenerateResource.Cache
+V:\Midterm\Midterm\obj\Debug\Midterm.exe
+V:\Midterm\Midterm\obj\Debug\Midterm.pdb
+V:\Midterm\Midterm\obj\Debug\Midterm.Form2.resources
