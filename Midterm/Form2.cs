@@ -16,6 +16,8 @@ namespace Midterm
         private List<string> rawOutput = new List<string>();
         private List<string> convOutput = new List<string>();
         private string name;
+        private string testType;
+
         public Form2()
         {
             InitializeComponent();
@@ -56,6 +58,11 @@ namespace Midterm
             set { name = value; }
         }
 
+        public string TestType
+        {
+            set { testType = value; }
+        }
+
         //If the user likes the data, this uploads it to the SQL server.
         private void submitData_Click(object sender, EventArgs e)
         {
@@ -70,7 +77,7 @@ namespace Midterm
                 Data.A = delayInput[i];
                 Data.B = rawOutput[i];
                 Data.C = convOutput[i];
-                Data.D = "N/A";
+                Data.D = testType;
                 Data.E = "N/A";
                 Data.F = "N/A";
 

@@ -49,16 +49,16 @@ namespace Midterm
 
             //Sets the data bar for the current test.
             progressBar1.Value = 0;
-            progressBar1.Maximum = 429;
+            progressBar1.Maximum = 100;
 
             //Collects all the data.
-            for (uint i = 0; i < 429; i++)
+            for (uint i = 0; i < 100; i++)
             {
                 try
                 {
                     serialPort.Open();
-                    delayInput.Add(Convert.ToString(i * 10000000));
-                    serialPort.WriteLine(Convert.ToString(i * 10000000)); //Sends delay value to zybo.
+                    delayInput.Add(Convert.ToString(i * 40000000));
+                    serialPort.WriteLine(Convert.ToString(i * 40000000)); //Sends delay value to zybo.
                     rawVal = serialPort.ReadLine();                       //waits for zybo to send back a value.
                     rawOutput.Add(rawVal);
                     Conversion = Convert.ToDouble(rawVal) / 325000000;
@@ -72,6 +72,7 @@ namespace Midterm
                 catch
                 {
                     MessageBox.Show("Could not connect to the serial port.", "Midterm", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    LongTestButton.Enabled = true;
                     return;
                 }
             }
@@ -81,9 +82,10 @@ namespace Midterm
 
             //Moves the variables in this form to the second one.
             fr.DelayInput = delayInput;
-            fr.RawOutput    = rawOutput;
+            fr.RawOutput  = rawOutput;
             fr.ConvOutput = convOutput;
             fr.PersonName = personBox.Text;
+            fr.TestType   = "int";
             fr.Show();                         //Shows the second form.
 
             LongTestButton.Enabled = true;
@@ -142,9 +144,10 @@ namespace Midterm
 
             //Moves the variables in this form to the second one.
             fr.DelayInput = delayInput;
-            fr.RawOutput = rawOutput;
+            fr.RawOutput  = rawOutput;
             fr.ConvOutput = convOutput;
             fr.PersonName = personBox.Text;
+            fr.TestType   = "short int";
             fr.Show();                          //Shows the second form.
 
             shortTestButton.Enabled = true;

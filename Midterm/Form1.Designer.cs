@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.LongTestButton = new System.Windows.Forms.Button();
             this.shortTestButton = new System.Windows.Forms.Button();
             this.serialPort = new System.IO.Ports.SerialPort(this.components);
@@ -96,6 +97,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.shortTestButton);
             this.Controls.Add(this.LongTestButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Midterm";
             this.Load += new System.EventHandler(this.Form1_Load);

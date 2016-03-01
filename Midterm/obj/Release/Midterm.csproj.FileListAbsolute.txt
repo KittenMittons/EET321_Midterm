@@ -1,0 +1,9 @@
+V:\EET321_Midterm\Midterm\bin\Release\Midterm.exe.config
+V:\EET321_Midterm\Midterm\bin\Release\Midterm.exe
+V:\EET321_Midterm\Midterm\bin\Release\Midterm.pdb
+V:\EET321_Midterm\Midterm\obj\Release\Midterm.Form1.resources
+V:\EET321_Midterm\Midterm\obj\Release\Midterm.Form2.resources
+V:\EET321_Midterm\Midterm\obj\Release\Midterm.Properties.Resources.resources
+V:\EET321_Midterm\Midterm\obj\Release\Midterm.csproj.GenerateResource.Cache
+V:\EET321_Midterm\Midterm\obj\Release\Midterm.exe
+V:\EET321_Midterm\Midterm\obj\Release\Midterm.pdb
